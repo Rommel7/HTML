@@ -1,7 +1,6 @@
-HTML (ing. Hypertext Markup Language) — brauzerin oxuya biləcəyi hər hansı sənədi və ya səhifəni yaratmaq üçün xüsusi hipermətn dilidir. 
-HTML internetin fundamental baza texnologiyasıdır və veb-səhifənin növünü, funksiyasını təyin edən diskriptorlar əsasında yaradılmış dildir.
+HTML (ing. Hypertext Markup Language) — brauzerin oxuya biləcəyi hər hansı sənədi və ya səhifəni yaratmaq üçün xüsusi hipermətn dilidir. HTML internetin fundamental baza texnologiyasıdır və veb-səhifənin növünü, funksiyasını təyin edən diskriptorlar əsasında yaradılmış dildir.
 HTML dilinin inkişaf tarixi 1989-cu ildə Oksford Universitetinin tələbəsi Tim Berners-Li tərəfindən hipermətnli sənəd sisteminin çıxarılması təklifi ilə başladı. 
-Onun mövcud olan versiyaları aşağıdakılardır:
+## Onun mövcud olan versiyaları aşağıdakılardır:
 1) HTML 0.9;
 2) HTML 2.0 — 22 sentyabr 1995-ci il;
 3) HTML 3.2 — 14 yanvar 1997-ci il;
@@ -28,9 +27,7 @@ Nəticədə yeni dilin adı XHTML oldu.
 26 yanvar 2000-ci ildə I veresiya XHTML 1.0 ümümdünya konsorsiyum toru tərəfindən recomend səviyyəsində qəbul olundu.
 
 # HTML5-dƏ HTML 4-dən fərqli olaraq nələr yarandı?
-
-
-1) HTML5-də yeni doctype yarandı, hansını ki yadda saxlamaq daha rahatdır.
+- HTML5-də yeni doctype yarandı, hansını ki yadda saxlamaq daha rahatdır.
 
 İndi o belə yazılır:
 
@@ -45,14 +42,14 @@ Bu qısa yazılış əvvəlki uzun yazılışı əvəz edir:
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
-2) İndi kodirovjkanı yeni qısaldılmış yolla göstərmək olar:
+- İndi kodirovjkanı yeni qısaldılmış yolla göstərmək olar:
 
 <meta charset="UTF-8">
 Köhnə versiyadakından fərqli olaraq:
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-3) Səhifənin məntiqinə və semanticasına yeni elementlərin əlavə olunması. 
+- Səhifənin məntiqinə və semanticasına yeni elementlərin əlavə olunması. 
 
 HTML4 əsas konstruktiv element `div` elementi idi. 
 `div` – özü-özlüyündə səhifədəki düzbucaqlı bir oblastdır hansı ki özündə nəsə saxlayır. (burda hər şey ola bilər)
@@ -60,8 +57,7 @@ HTML4 əsas konstruktiv element `div` elementi idi.
 Problem onda idir ki burda nə gəldi yerləşdirmək olardı və və bəzi hallarda tamamən anlaşılmaz olurdu, səhifədəki hansı funskiya hansı rol daşıyır və hansı məntiqi məna daşıyır. 
 Yeganə məntiqli çıxış yolu elementə unikal identifikator (id atributu) əlavə olunması idi.
 
-
-HTML5-də div yox olmayıb, ancaq yeni elementlər yaranıb, hansılar ki özü-özlüyündə bir məna daşıyır.
+# HTML5-də div yox olmayıb, ancaq yeni elementlər yaranıb, hansılar ki özü-özlüyündə bir məna daşıyır.
 
 Bunlara misal olaraq:
 
@@ -75,34 +71,30 @@ Bunlara misal olaraq:
  section.
  h1,h2,h3,h4,h5 и h6.
 
-4) Yeni müxtəlif spesefik məsələləri həll edən digər yeni elementlər yaranmışdır.
+- Yeni müxtəlif spesefik məsələləri həll edən digər yeni elementlər yaranmışdır.
 
-5) Veb-səhifələrin Появилась новая технология построения оглавления веб-страницы (outline).
+- Veb-səhifələrin Появилась новая технология построения оглавления веб-страницы (outline).
 
 Теперь для каждой веб-страницы, можно построить его оглавление и увидеть ее карскас или структуру. 
 Планируется, что в будущем, эта новая возможность будет внедрятся в браузеры.
 
-6) HTML5 yeni qaydalarına görə dil daha ciddiləşib.
+- HTML5 yeni qaydalarına görə dil daha ciddiləşib.
 
 HTML4 sintaksis baxımdan çox sərbəst idi.
 
+# HTML 5: отличия от HTML 4
 
------------------------------------
-HTML 5: отличия от HTML 4
-
-Синтаксис
+**Синтаксис**
 
 HTML 5 будет иметь два синтаксиса — «custom» HTML и XML. 
 HTML синтаксис определяет детализированные правила синтаксического анализа (включая «обработку ошибок»). 
 Пользовательские агенты будут следовать этим правилам для документов, имеющих MIME тип text/html. Вот пример синтаксиса HTML:
 
-
 XML синтаксис совместим с документами XHTML1 и его реализациями. 
 Чтобы использовать этот синтаксис нужно объявить MIME тип XML, а элементы должны быть выстроены согласно спецификации XML. 
 Ниже приведен пример, который соответствует синтаксису XML:
 
-
-Кодировка символов
+**Кодировка символов**
 
 Для синтаксиса HTML разработчики могут использовать три способа установки кодировки:
 
@@ -118,7 +110,7 @@ XML синтаксис совместим с документами XHTML1 и е
 
 Для синтаксиса XML разработчики должны руководствоваться правилами спецификаций XML.
 
-Новые элементы
+**Новые элементы**
 
 section представляет часть документа или раздел
 article представляет независимую часть содержания для включения в документ статей
